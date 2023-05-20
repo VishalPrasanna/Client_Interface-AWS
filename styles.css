@@ -1,0 +1,18 @@
+.top_bar {
+    padding: 1px;
+    height: 60px;
+    background-color: #B9B0B0;
+    margin: -10px;
+}
+
+#text_top_bar {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    /* move the text to up  */
+    margin-top: 11px;
+    margin-bottom: auto;
+    margin-left: 100px;
+}
+
