@@ -7,7 +7,7 @@ const product1 = {
   };
 
 function addToCurrent(Product){
-    const current = document.getElementById("current_table");
+    const current = document.getElementsByClassName("current_table");
     const addRow = current.insertRow();
 
     const arrayProduct = Object.entries(Product);
