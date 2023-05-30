@@ -16,7 +16,7 @@
     margin-left: 100px;
 }
 
-#text_input {
+#user_input,#stored_input  {
     margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 8px;
@@ -80,7 +80,7 @@ body {
 
 }
 
-table {
+.current_table {
     margin: 10px;
     width: 100%;
     border-collapse: collapse;
