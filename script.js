@@ -6,17 +6,20 @@ const product1 = {
     "key3": "value3"
   };
 
-function addToCurrent(Product){
-    const current = document.getElementsByClassName("current_table");
+
+function addToCurrent(Product) {
+    const current = document.getElementsByClassName("current_table")[0];
     const addRow = current.insertRow();
 
-    const arrayProduct = Object.entries(Product);
-
-    arrayProduct.forEach(([key, value]) => {
+    let columnIndex = 0;
+    for (const [key, value] of Object.entries(Product)) {
         console.log(key, value);
-        const cell = addRow.insertCell();
+        const cell = addRow.insertCell(columnIndex);
+        console.log(value);
         cell.innerHTML = value;
-    });
+        columnIndex++;
+    }
 }
+
 
 addToCurrent(product1);
